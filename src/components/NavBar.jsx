@@ -23,12 +23,12 @@ function NavBar  (userloggedin) {
     };
   }, [prevScrollPos]);
   const handleLogout = () => {
+    navigate('/'); 
     setUserName('');
     localStorage.removeItem('token');
     localStorage.removeItem('role');
     localStorage.removeItem('userloggedin');
-
-    navigate('/'); 
+    
   };
   const handleLogin = async () => {
     const token = localStorage.getItem('token');
