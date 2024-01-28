@@ -6,12 +6,14 @@ import About from './About'
 
 
 
+
 function HomePage({userloggedin}) {
   return (
     <div>
      <NavBar userloggedin={userloggedin}/>
      <Slide/>
      <About/>
+   
     
      
 

@@ -128,7 +128,7 @@ function ManageBike({adminloggedin}) {
     <div className="bike-container">
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
       {products.map((bike) => (
-          <div className='bike-list' key={bike.make} style={{ margin: '15px 30px', textAlign: 'center' }}>
+          <div key={bike._id} className='bike-list'  style={{ margin: '15px 30px', textAlign: 'center' }}>
             <img
               src={bike.imagelink}
               alt={bike.make}

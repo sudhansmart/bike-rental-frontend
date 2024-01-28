@@ -1,7 +1,7 @@
 {
   "name": "front-end",
   "private": true,
-  "proxy" : "https://goglide.onrender.com",
+  "proxy": "https://goglide.onrender.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.6.2",

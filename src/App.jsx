@@ -9,6 +9,8 @@ import AdminDashboard from './components/AdminDashboard';
 import Bike from './components/Bike';
 import AddBikes from './components/AddBikes';
 import ManageBike from './components/ManageBike';
+import AboutSection from './components/AboutSection';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -51,6 +53,16 @@ function App() {
             )
           }
         />
+        <Route
+          path="/about"
+          element={
+            token &&  userloggedin? (
+              <AboutSection/>
+            ) : (
+              <Navigate to="/" />
+            )
+          }
+        />
          
         <Route path="/createaccount" element={<CreateAccount />} />
         <Route
@@ -70,6 +82,7 @@ function App() {
           element={token && adminloggedin? <ManageBike adminloggedin={adminloggedin} /> : <Navigate to="/" />}
         />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

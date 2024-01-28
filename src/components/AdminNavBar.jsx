@@ -9,7 +9,7 @@ function AdminNavBar  ({adminloggedin}) {
   const [userName, setUserName] = useState(''); // Add state for user name
  
 
-  console.log(adminloggedin)
+ 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
@@ -76,7 +76,7 @@ function AdminNavBar  ({adminloggedin}) {
         <Nav.Link eventKey="link-2">Bookings</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-2">Vehicle Staus</Nav.Link>
+        <Nav.Link eventKey="link-2">Vehicle Status</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="/managebike">Manage Bike List</Nav.Link>

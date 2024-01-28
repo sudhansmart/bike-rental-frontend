@@ -69,7 +69,7 @@ function NavBar  (userloggedin) {
         <Nav.Link href="/">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">About</Nav.Link>
+        <Nav.Link as={Link} to="/about">About</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link eventKey="link-2">Services</Nav.Link>
